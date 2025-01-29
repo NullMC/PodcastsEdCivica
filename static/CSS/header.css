@@ -1,0 +1,21 @@
+@import url(nav.css);
+
+header{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.introEl{
+    margin-top: 10vh;
+    list-style-type: none;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.introEl li{
+    text-align: center;
+    width: fit-content;
+}
+
+
