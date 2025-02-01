@@ -15,19 +15,22 @@
         <nav class="navbar bg-body-tertiary">
             <a class="navbar-brand" href="#">
                 <img src="static/CSS/Imgs/logo.webp" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">                
-            </a>
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-2">
-                    <a class="nav-link active montserrat-alternates-regular" aria-current="page" href="#">About</a>
-                    <a class="nav-link montserrat-alternates-regular" href="#">Episodes</a>
-                </div>
-            </div>  
+            </a> 
         </nav>
-
-
+        <div class="episodes">
+            <div class="episode">
+                <img src="static/CSS/Imgs/cover.webp" class="d-block w-100" alt="cover">
+            </div>
+            <div class="player">
+                <button id="playPause3">Play</button>
+                <input type="range" id="seekBar3" value="0" step="1" min="0">
+                <span id="currentTime3">0:00</span> / <span id="duration3">0:00</span>
+            </div>
+        
+            <script>
+                setupAudioPlayer('static/JS/AudioTracks/1.m4a', 'playPause3', 'seekBar3', 'currentTime3', 'duration3');
+            </script>
+        </div>
 
 
         <div class="content">
@@ -37,16 +40,6 @@
                         <img src="static/CSS/Imgs/Illustration01.webp" alt="left-img">
                         <ul>
                             <li class="montserrat-alternates-light">Attività di ricerca di argomenti inerenti la sicurezza informatica nel mondo delle reti e conseguenze a livello lavorativo per quanto riguarda le problematiche di accesso al WEB.</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="content-section">
-                        <img src="static/CSS/Imgs/Illustration02.webp" alt="right-img">
-                        <ul>
-                            <li class="montserrat-alternates-light">Salute e benessere:il gioco d’azzardo detto Ludopatia.</li>
-                            <li class="montserrat-alternates-light">Comprendere le dinamiche personali e sociali della lotta alla criminalità con riferimento agli articoli della Costituzione sulla sicurezza sui luoghi di lavoro .</li>
                         </ul>
                     </div>
                 </li>
